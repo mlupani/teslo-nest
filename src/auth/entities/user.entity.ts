@@ -23,7 +23,7 @@ export class User {
   password: string;
   @Column('text', {
     nullable: false,
-    select: false,
+    select: true,
   })
   fullName: string;
   @Column('bool', {
